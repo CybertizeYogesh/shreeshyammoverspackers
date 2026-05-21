@@ -1,0 +1,130 @@
+@media (max-width: 1279px) {
+  :root {
+    --container: 1140px;
+  }
+
+  .quote-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --section-space: 70px;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .navrow {
+    min-height: 76px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero__slide {
+    min-height: 650px;
+  }
+
+  .about-layout,
+  .why-layout,
+  .faq-layout,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3,
+  .grid-4,
+  .counter-wrap,
+  .brand-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .field,
+  .field.field-small {
+    grid-column: span 6;
+  }
+
+  .link-cloud {
+    columns: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 24px;
+    --section-space: var(--section-space-mobile);
+  }
+
+  .logo {
+    width: 152px;
+  }
+
+  .hero__slide {
+    min-height: 590px;
+  }
+
+  .hero__content {
+    padding-bottom: 70px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-form-band {
+    margin-top: -38px;
+  }
+
+  .quote-form {
+    padding: 26px 18px 16px;
+  }
+
+  .field,
+  .field.field-small {
+    grid-column: span 12;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .counter-wrap,
+  .brand-strip,
+  .why-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images {
+    min-height: 390px;
+  }
+
+  .year-badge {
+    width: 132px;
+    height: 132px;
+    left: 16px;
+  }
+
+  .year-badge strong {
+    font-size: 42px;
+  }
+
+  .counter-card:not(:last-child)::after {
+    display: none;
+  }
+
+  .link-cloud {
+    columns: 1;
+  }
+
+  .feedback-tab {
+    display: none;
+  }
+}

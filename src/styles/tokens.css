@@ -1,0 +1,25 @@
+:root {
+  --theme-color: #c4170d;
+  --theme-color2: #ffc702;
+  --theme-color3: #8cc63f;
+  --title-color: #1f1f1f;
+  --body-color: #797e88;
+  --smoke-color: #f7f7f7;
+  --smoke-color2: #f6f6f6;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --dark-color: #021526;
+  --border-color: #d8dde1;
+  --title-font: "DM Sans", "Archivo", Arial, sans-serif;
+  --body-font: "DM Sans", "Archivo", Arial, sans-serif;
+  --container: 1290px;
+  --gutter: 30px;
+  --section-space: 80px;
+  --section-space-mobile: 60px;
+  --shadow: 0 10px 30px rgba(2, 21, 38, 0.1);
+  --shadow-strong: 0 14px 45px rgba(2, 21, 38, 0.16);
+  --z-header: 100;
+  --z-dropdown: 120;
+  --z-mobile: 200;
+  --z-float: 150;
+}
