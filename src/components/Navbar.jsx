@@ -54,7 +54,7 @@ export default function Navbar() {
       <header className="site-header">
         <div className="container navrow">
           <Link className="logo" href="/" aria-label="Indian Best Packers & Movers home">
-            <Image src="/images/common/assets/img/logo.png" alt="Indian Best Packers & Movers logo" width={190} height={82} priority />
+            <Image src="/images/common/assets/img/logo.webp" alt="Indian Best Packers & Movers logo" width={190} height={82} priority />
           </Link>
           <nav className="main-nav" aria-label="Primary navigation">
             <NavItems />
@@ -71,7 +71,7 @@ export default function Navbar() {
             <X size={22} />
           </button>
           <Link className="logo" href="/" onClick={() => setOpen(false)}>
-            <Image src="/images/common/assets/img/logo.png" alt="Indian Best Packers & Movers logo" width={180} height={78} />
+            <Image src="/images/common/assets/img/logo.webp" alt="Indian Best Packers & Movers logo" width={180} height={78} />
           </Link>
           <nav className="mobile-nav" aria-label="Mobile navigation">
             <ul>

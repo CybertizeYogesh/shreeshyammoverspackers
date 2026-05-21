@@ -801,7 +801,7 @@
 .inner-hero {
   padding: 118px 0;
   color: var(--white-color);
-  background: linear-gradient(rgba(2, 21, 38, 0.76), rgba(2, 21, 38, 0.76)), url("/images/common/assets/img/hero/hero_bg_2_2.jpg") center/cover;
+  background: linear-gradient(rgba(2, 21, 38, 0.76), rgba(2, 21, 38, 0.76)), url("/images/common/assets/img/hero/hero_bg_2_2.webp") center/cover;
   text-align: center;
 }
 

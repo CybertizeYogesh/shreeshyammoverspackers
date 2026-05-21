@@ -5,9 +5,9 @@ import Image from "next/image";
 import Button from "./Button";
 
 const slides = [
-  "/images/common/assets/img/hero/hero_bg_2_3.jpg",
-  "/images/common/assets/img/hero/hero_bg_2_2.jpg",
-  "/images/common/assets/img/hero/hero_bg_2_1.jpg",
+  "/images/common/assets/img/hero/hero_bg_2_3.webp",
+  "/images/common/assets/img/hero/hero_bg_2_2.webp",
+  "/images/common/assets/img/hero/hero_bg_2_1.webp",
 ];
 
 export default function HeroSection() {

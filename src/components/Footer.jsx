@@ -5,10 +5,10 @@ import { slugify } from "@/utils/slug";
 
 export default function Footer() {
   return (
-    <footer className="footer" style={{ backgroundImage: "url('/images/common/assets/img/bg/footer_bg_2.jpg')" }}>
+    <footer className="footer" style={{ backgroundImage: "url('/images/common/assets/img/bg/footer_bg_2.webp')" }}>
       <div className="container footer-grid">
         <div>
-          <Image className="footer-logo" src="/images/common/assets/img/logo.png" alt="Indian Best Packers & Movers logo" width={190} height={82} />
+          <Image className="footer-logo" src="/images/common/assets/img/logo.webp" alt="Indian Best Packers & Movers logo" width={190} height={82} />
           <p>Indian Best Packers & Movers Is The Trusted Source for All Your Moving & Logistical Needs. Get in touch with us today!!</p>
         </div>
         <div>

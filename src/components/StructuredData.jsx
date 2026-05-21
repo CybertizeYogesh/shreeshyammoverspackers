@@ -6,7 +6,7 @@ export default function StructuredData() {
     "@type": "MovingCompany",
     name: site.name,
     url: site.url,
-    image: `${site.url}/images/common/assets/img/logo.png`,
+    image: `${site.url}/images/common/assets/img/logo.webp`,
     telephone: site.phone,
     email: site.email,
     address: {

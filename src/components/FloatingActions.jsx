@@ -10,10 +10,10 @@ export default function FloatingActions() {
       </div>
       <div className="floating-buttons">
         <a href="tel:8005746241" aria-label="Call Indian Best Packers & Movers">
-          <Image src="/images/common/img/floating-call.png" alt="Floating Call" width={50} height={50} />
+          <Image src="/images/common/img/floating-call.webp" alt="Floating Call" width={50} height={50} />
         </a>
         <a href={`https://wa.me/${site.whatsapp}`} aria-label="WhatsApp Indian Best Packers & Movers">
-          <Image src="/images/common/img/whatsapp.png" alt="WhatsApp" width={50} height={50} />
+          <Image src="/images/common/img/whatsapp.webp" alt="WhatsApp" width={50} height={50} />
         </a>
       </div>
     </>

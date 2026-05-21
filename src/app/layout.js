@@ -19,7 +19,7 @@ export const metadata = {
     title: "Indian Best Packers & Movers",
     description: "Trusted packers and movers in Jaipur for household, office, vehicle, cargo, and warehouse services.",
     siteName: site.name,
-    images: ["/images/common/assets/img/logo.png"],
+    images: ["/images/common/assets/img/logo.webp"],
   },
   twitter: {
     card: "summary_large_image",
