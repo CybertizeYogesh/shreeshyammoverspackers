@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
 import { navLinks, site } from "@/data/siteData";
 import Button from "./Button";
 
@@ -39,27 +39,25 @@ export default function Navbar() {
       <div className="topbar">
         <div className="container topbar__inner">
           <ul className="topbar__links">
-            <li><a href="tel:8005746241">{site.phone}</a> / <a href="tel:8094273586">8094273586</a></li>
-            <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-            <li><b>GSTIN : </b>{site.gst}</li>
-            <li><b>PAN NO : </b>{site.pan}</li>
+            <li className="hphone"><a href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`}><Phone size={14} /> {site.phone}</a> / <a href={`tel:${site.phoneAlt.replace(/[^0-9+]/g, '')}`}>{site.phoneAlt}</a></li>
+            <li className="hmail"><a href={`mailto:${site.email}`}><Mail size={14} /> {site.email}</a></li>
           </ul>
           <ul className="topbar__social" aria-label="Social links">
-            <li><a href="https://www.facebook.com/indianbestpackers">f</a></li>
-            <li><a href="https://www.instagram.com/indianbestpackersinjaipur/">ig</a></li>
-            <li><a href="https://youtube.com/@packersandmoversinjaipur9686">yt</a></li>
+            <li><a href="#" aria-label="Facebook">f</a></li>
+            <li><a href="#" aria-label="Instagram">ig</a></li>
+            <li><a href="#" aria-label="YouTube">yt</a></li>
           </ul>
         </div>
       </div>
       <header className="site-header">
         <div className="container navrow">
-          <Link className="logo" href="/" aria-label="Indian Best Packers & Movers home">
-            <Image src="/images/common/assets/img/logo.webp" alt="Indian Best Packers & Movers logo" width={190} height={82} priority />
+          <Link className="logo" href="/" aria-label="Shree Shyam Movers & Packers home">
+            <Image src="/images/common/assets/img/logo.webp" alt="Shree Shyam Movers & Packers logo" width={160} height={48} style={{ width: "160px", height: "auto" }} priority />
           </Link>
           <nav className="main-nav" aria-label="Primary navigation">
             <NavItems />
           </nav>
-          <Button href="/contact" yellow className="quote-btn">Get A Quote</Button>
+          <Button href="/contact" yellow className="quote-btn shadow-none">Get A Quote</Button>
           <button className="menu-toggle" type="button" onClick={() => setOpen(true)} aria-label="Open menu">
             <Menu size={26} />
           </button>
@@ -71,7 +69,7 @@ export default function Navbar() {
             <X size={22} />
           </button>
           <Link className="logo" href="/" onClick={() => setOpen(false)}>
-            <Image src="/images/common/assets/img/logo.webp" alt="Indian Best Packers & Movers logo" width={180} height={78} />
+            <Image src="/images/common/assets/img/logo.webp" alt="Shree Shyam Movers & Packers logo" width={160} height={48} style={{ width: "160px", height: "auto" }} />
           </Link>
           <nav className="mobile-nav" aria-label="Mobile navigation">
             <ul>

@@ -1,6 +1,6 @@
-# Indian Best Packers & Movers Clone
+# Shree Shyam Movers & Packers
 
-Production-grade Next.js App Router clone foundation for `https://www.indianbestpackersmovers.com/`.
+Production-grade Next.js App Router website for Shree Shyam Movers & Packers.
 
 ## Stack
 
@@ -34,7 +34,7 @@ Dev server URL: `http://localhost:3000`
 
 ```bash
 git add .
-git commit -m "Build Indian Best Packers Movers clone"
+git commit -m "Build Shree Shyam Movers & Packers website"
 git branch -M main
 git remote add origin https://github.com/<your-user>/<your-repo>.git
 git push -u origin main

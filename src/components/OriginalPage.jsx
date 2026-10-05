@@ -6,7 +6,7 @@ export default function OriginalPage({ slug }) {
   const title = getOriginalTitle(slug);
 
   if (!html) {
-    return <InnerPage title={title} eyebrow="Indian Best Packers & Movers" />;
+    return <InnerPage title={title} eyebrow="Shree Shyam Movers & Packers" />;
   }
 
   return (

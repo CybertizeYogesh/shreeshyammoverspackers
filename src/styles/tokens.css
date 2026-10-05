@@ -1,15 +1,17 @@
 :root {
-  --theme-color: #c4170d;
-  --theme-color2: #ffc702;
-  --theme-color3: #8cc63f;
-  --title-color: #1f1f1f;
+  --theme-color: #f26b25;
+  --theme-color2: #041d54;
+  --theme-color3: #041d54;
+  --title-color: #041d54;
   --body-color: #797e88;
   --smoke-color: #f7f7f7;
   --smoke-color2: #f6f6f6;
   --white-color: #ffffff;
   --black-color: #000000;
-  --dark-color: #021526;
+  --black-color2: #021133;
+  --dark-color: #041d54;
   --border-color: #d8dde1;
+  --th-border-color: #d8dde1;
   --title-font: "DM Sans", "Archivo", Arial, sans-serif;
   --body-font: "DM Sans", "Archivo", Arial, sans-serif;
   --container: 1290px;

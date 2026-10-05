@@ -11,10 +11,10 @@ export default function StructuredData() {
     email: site.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Plot No. 31,32, Shri Jagdishpuri, Heerapura, Ajmer Road",
-      addressLocality: "Jaipur",
-      postalCode: "302021",
-      addressRegion: "Rajasthan",
+      streetAddress: "Shop No. 1, Near Bhart Tower, Gosala Road, Krishna Chowk, Palam Vihar",
+      addressLocality: "Gurugram",
+      postalCode: "122017",
+      addressRegion: "Haryana",
       addressCountry: "IN",
     },
   };

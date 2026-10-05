@@ -124,7 +124,8 @@
     columns: 1;
   }
 
-  .feedback-tab {
-    display: none;
+  .floating-buttons,
+  .floating_buttons {
+    bottom: 20px !important;
   }
 }

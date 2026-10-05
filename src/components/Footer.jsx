@@ -8,8 +8,8 @@ export default function Footer() {
     <footer className="footer" style={{ backgroundImage: "url('/images/common/assets/img/bg/footer_bg_2.webp')" }}>
       <div className="container footer-grid">
         <div>
-          <Image className="footer-logo" src="/images/common/assets/img/logo.webp" alt="Indian Best Packers & Movers logo" width={190} height={82} />
-          <p>Indian Best Packers & Movers Is The Trusted Source for All Your Moving & Logistical Needs. Get in touch with us today!!</p>
+          <Image className="footer-logo" src="/images/common/assets/img/logo.webp" alt="Shree Shyam Movers & Packers logo" width={160} height={48} style={{ width: "160px", height: "auto" }} />
+          <p>Shree Shyam Movers & Packers Is The Trusted Source for All Your Moving & Logistical Needs. Get in touch with us today!!</p>
         </div>
         <div>
           <h3>Quick Links</h3>
@@ -29,12 +29,12 @@ export default function Footer() {
         </div>
         <div>
           <h3>Contact Us</h3>
-          <h4>Address</h4>
-          <p>{site.address}</p>
-          <p><a href="tel:8005746241">{site.phone}</a></p>
-          <h4>Branch Jhunjhunu</h4>
-          <p>Shop No 12/13, Inderpuri Colony, Loharu Bypass Road Near Tilak School, Pilani District Jhunjhunu Rajasthan 333031</p>
-          <p><a href="tel:8094243586">+91 8094243586</a></p>
+          <h4>Head Office</h4>
+          <p>{site.headOffice}</p>
+          <p><a href={`tel:${site.phone.replace(/[^0-9+]/g, '')}`}>{site.phone}</a></p>
+          <h4>Office</h4>
+          <p>{site.office}</p>
+          <p><a href={`tel:${site.phoneAlt.replace(/[^0-9+]/g, '')}`}>{site.phoneAlt}</a></p>
           <h4>Email Us</h4>
           <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="copyright">
-        <div className="container">Copyright 2024 <Link href="/">Indian Best Packers & Movers</Link>. All Rights Reserved.</div>
+        <div className="container">Copyright {new Date().getFullYear()} <Link href="/">Shree Shyam Movers & Packers</Link>. All Rights Reserved.</div>
       </div>
     </footer>
   );

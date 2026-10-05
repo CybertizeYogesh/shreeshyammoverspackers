@@ -28,7 +28,7 @@ export default function QuoteForm({ compact = false }) {
               <input type="text" name="to" placeholder="To City" required />
             </label>
             <div className="field field-small"><div className="captcha-clone">reCAPTCHA</div></div>
-            <div className="field field-small"><Button>submit Now</Button></div>
+            <div className="field field-small"><Button yellow className="submitbtn w-100">submit Now</Button></div>
           </>
         ) : (
           <>
@@ -36,7 +36,7 @@ export default function QuoteForm({ compact = false }) {
               <span className="sr-only">Message</span>
               <textarea name="message" placeholder="Message" />
             </label>
-            <div className="field"><Button>Submit Now</Button></div>
+            <div className="field"><Button className="w-100">Submit Now</Button></div>
           </>
         )}
       </div>

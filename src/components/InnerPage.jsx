@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 import FAQ from "./FAQ";
 import { services, site } from "@/data/siteData";
 
-export default function InnerPage({ title, eyebrow = "Indian Best Packers & Movers", children }) {
+export default function InnerPage({ title, eyebrow = "Shree Shyam Movers & Packers", children }) {
   return (
     <main>
       <section className="inner-hero">

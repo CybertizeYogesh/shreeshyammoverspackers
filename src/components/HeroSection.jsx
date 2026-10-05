@@ -29,7 +29,7 @@ export default function HeroSection() {
         </span>
         <div className="container">
           <div className="hero__content">
-            <span className="eyebrow">Indian Best Packers & Movers</span>
+            <span className="eyebrow">Shree Shyam Movers & Packers</span>
             <h1 className="hero__title">International and Domestic Services</h1>
             <p className="hero__text">As a company that helps you shift your household goods and even your cars and vehicles, we are the best in the business.</p>
             <div className="hero__buttons">

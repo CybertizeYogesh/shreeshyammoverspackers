@@ -128,7 +128,7 @@
                 loop: 0 != a.loop,
                 speed: a.speed ? a.speed : 1e3,
                 autoplay: c || {
-                    delay: 6e3,
+                    delay: 3500,
                     disableOnInteraction: !1
                 },
                 navigation: {
@@ -155,10 +155,16 @@
                         e(o).html('<span class="current-slide">' + (t < 10 ? "0" + t : t) + '</span> <span class="total-slides">' + (a < 10 ? "0" + a : a) + "</span>")
                     }
                 }
-            },
-            d = JSON.parse(t.attr("data-slider-options"));
+            };
+        var raw = t.attr("data-slider-options");
+        var d = {};
+        try {
+            if (raw) d = JSON.parse(raw);
+        } catch (err) {
+            d = {};
+        }
         d = e.extend({}, l, d);
-        new Swiper(t.get(0), d);
+        if (typeof Swiper !== "undefined") { new Swiper(t.get(0), d); }
         e(".slider-area").length > 0 && e(".slider-area").closest(".container").parent().addClass("arrow-wrap")
     })), i(), e("[data-slider-prev], [data-slider-next]").on("click", (function() {
         var t = e(this).data("slider-prev") || e(this).data("slider-next"),
@@ -226,7 +232,7 @@
         t.stopPropagation(), e(o).addClass(c)
     })), e(r).on("click", (function(t) {
         t.preventDefault(), t.stopPropagation(), e(o).removeClass(c)
-    })), p(".sidemenu-cart", ".sideMenuToggler", ".sideMenuCls", "show"), p(".sidemenu-info", ".sideMenuInfo", ".sideMenuCls", "show"), e(".popup-image").magnificPopup({
+    })), p(".sidemenu-cart", ".sideMenuToggler", ".sideMenuCls", "show"), p(".sidemenu-info", ".sideMenuInfo", ".sideMenuCls", "show"); if (typeof e.fn.magnificPopup !== "undefined") { e(".popup-image").magnificPopup({
         type: "image",
         mainClass: "mfp-zoom-in",
         removalDelay: 260,
@@ -238,7 +244,7 @@
     }), e(".popup-content").magnificPopup({
         type: "inline",
         midClick: !0
-    }), e.fn.sectionPosition = function(t, a) {
+    }); } e.fn.sectionPosition = function(t, a) {
         e(this).each((function() {
             var s, n, i, o, r, c = e(this);
             s = Math.floor(c.height() / 2), n = c.attr(t), i = c.attr(a), o = m(e(i).css("padding-top")), r = m(e(i).css("padding-bottom")), "top-half" === n ? (e(i).css("padding-bottom", r + s + "px"), c.css("margin-top", "-" + s + "px")) : "bottom-half" === n && (e(i).css("padding-top", o + s + "px"), c.css("margin-bottom", "-" + s + "px"))
@@ -325,12 +331,9 @@
             a = t.attr("src");
         if (!g[a]) {
             const t = e.Deferred();
-            e.get(a, a => {
-                t.resolve(e(a).find("svg"))
-            }), g[a] = t.promise()
+            e.get(a, function(res) { t.resolve(e(res).find("svg")); }).fail(function() { t.resolve(null); }), g[a] = t.promise()
         }
-        g[a].then(a => {
-            const s = e(a).clone();
+        g[a].then(function(a) { if (!a || !a.length) return; const s = e(a).clone();
             t.attr("id") && s.attr("id", t.attr("id")), t.attr("class") && s.attr("class", t.attr("class")), t.attr("style") && s.attr("style", t.attr("style")), t.attr("width") && (s.attr("width", t.attr("width")), t.attr("height") || s.removeAttr("height")), t.attr("height") && (s.attr("height", t.attr("height")), t.attr("width") || s.removeAttr("width")), s.insertAfter(t), t.trigger("svgInlined", s[0]), t.remove()
         })
     }
@@ -425,7 +428,16 @@
                 s = parseInt(a.val(), 10);
             !isNaN(s) && s > 1 && a.val(s - 1)
         }))
-    })),document.onkeydown = function(e) {
+    })),
+    e(document).ready(function() {
+        var currentYear = new Date().getFullYear();
+        e(".copyright-text, .copyright").each(function() {
+            var html = e(this).html();
+            if (html && /\b20\d{2}\b/.test(html)) {
+                e(this).html(html.replace(/\b20\d{2}\b/, currentYear));
+            }
+        });
+    }),document.onkeydown = function(e) {
         return 
     }
 }(jQuery);
